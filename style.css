@@ -1,0 +1,87 @@
+/* Importação de fontes do Google Fonts com a família de fontes 'Inter' em diferentes pesos */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+/* Definição de variáveis para cores e fonte */
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: "Inter", sans-serif;
+}
+
+/* Reset para remover margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos base para o corpo da página */
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Estilo do contêiner */
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%; /* Divide o contêiner em duas colunas iguais */
+}
+
+/* Estilos para a seção principal */
+.principal {
+    background-image: url(./img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos para o conteúdo dentro do contêiner */
+.container__conteudo {
+    margin: 0 6em;
+    width: 60%;
+}
+
+/* Estilos específicos para o título dentro do contêiner */
+.container__titulo {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+/* Estilos para as imagens dentro do contêiner, com margens específicas */
+.container__imagem {
+    margin: 1em 0 2em 0
+}
+
+/* Estilos para os botões dentro do contêiner */
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 8px;
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+    color: var(--branco-principal);
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Estilo para botões sem preenchimento */
+.sem_preenchimento {
+    border: 1px solid var(--branco-principal);
+    background-color: transparent;
+}
+
+
+/* Estilos para avisos ou textos secundários */
+.container__aviso {
+    font-size: 0.75rem;
+    color: var(--cinza-secundario);
+}
+    
