@@ -15,6 +15,7 @@
 * {
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 /* Estilos base para o corpo da página */
@@ -94,7 +95,7 @@ body {
 }
 
 .descricao__titulo {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
     color: var(--branco-principal);
     margin-bottom: 0.5em;
@@ -111,4 +112,26 @@ body {
 
 .container__descricao {
     padding: 6em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--branco-principal);
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.lista__item {
+    font-size: 2rem;
+    color: var(--branco-principal);
 }
